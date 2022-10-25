@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Light on / off</title>
+	<style type="text/css">
+		body {
+  			background-color: black;
+  			color: white;
+		}
+	</style>
+</head>
+<body>
+	<h1>İşığı yandıra bilərsiniz</h1>
+	<button onclick="document.getElementById('turn').src='on.gif'; document.body.style.backgroundColor = 'white'; document.body.style.color = 'black';">Yandır</button>
+	<img id="turn" src="off.gif">
+
+	<button onclick="document.getElementById('turn').src='off.gif'; document.body.style.backgroundColor = 'black'; document.body.style.color = 'white';" >Söndür</button>
+
+
+</body>
+</html>
