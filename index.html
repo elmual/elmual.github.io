@@ -1,23 +1,31 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Light on / off</title>
-	<style type="text/css">
-		body {
-  			background-color: black;
-  			color: white;
-		}
-	</style>
-</head>
-<body>
-	<h1>İşığı yandıra bilərsiniz</h1>
-	<button onclick="document.getElementById('turn').src='on.gif'; document.body.style.backgroundColor = 'white'; document.body.style.color = 'black';">Yandır</button>
-	<img id="turn" src="off.gif">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Animated Login Form | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="center">
+      <h1>Login</h1>
+      <form action="display.html">
+        <div class="txt_field">
+          <input type="text" required>
+          <span></span>
+          <label>Username</label>
+        </div>
+        <div class="txt_field">
+          <input type="password" required>
+          <span></span>
+          <label>Password</label>
+        </div>
+        <div class="pass">Forgot Password?</div>
+        <input type="submit" value="Login">
+        <div class="signup_link">
+          Not a member? <a href="#">Signup</a>
+        </div>
+      </form>
+    </div>
 
-	<button onclick="document.getElementById('turn').src='off.gif'; document.body.style.backgroundColor = 'black'; document.body.style.color = 'white';" >Söndür</button>
-
-
-</body>
+  </body>
 </html>
