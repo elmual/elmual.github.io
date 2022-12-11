@@ -22,12 +22,12 @@ html, body {
 
 .header-item {
     margin-right: auto;
-    padding-left: 15px;
+    margin-left: 15px;
     background-image: url(aspa.png);
     background-position: center;
     background-size: cover;
-    height: 60px;
-    width: 150px;
+    height: 84px;
+    width: 100px;
 }
 
 .call {
