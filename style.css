@@ -1,6 +1,8 @@
 html, body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: white;
+    font-size: 20px;
+    background-color: indigo;
 }
 
 * {
@@ -12,12 +14,11 @@ html, body {
 .header {
     display: flex;
     justify-content: center;
-    background-color: black;
-    height: 100px;
+    background-color: indigo;
+    height: 150px;
     align-items: center;
     position: sticky;
     top: 0;
-    color: white;
 }
 
 .header-item {
@@ -25,16 +26,17 @@ html, body {
     margin-left: 15px;
     background-image: url(aspa.png);
     background-position: center;
-    background-size: cover;
-    height: 84px;
-    width: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 150px;
 }
 
 .call {
     float: right;
     background-image: url(call.png);
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     background-size: cover;
     margin:10px;
     transform: scale(1);
@@ -43,8 +45,8 @@ html, body {
 .whatsapp {
     float: right;
     background-image: url(whatsapp.png);
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     background-size: cover;
     margin-right: 15px;
     transform: scale(1);
@@ -61,22 +63,36 @@ html, body {
 .nav {
     float: right;
     background-image: url(nav.png);
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     background-size: cover;
     margin-right: 15px;
+}
+h3 {
+    padding: 10px;
+}
+
+p {
+    font-size: 25px;
+    text-align: center;
+}
+
+#footer {
+    font-size: 20px;
 }
 
 iframe {
     width: 100%;
     border-radius: 10px;
+    margin: 20px;
+    filter: invert(100%);
 }
 
 .footer {
     display: flex;
     justify-content: center;
-    background-color: black;
-    height: 40px;
+    background-color: indigo;
+    height: 60px;
     align-items: center;
     position: sticky;
     bottom: 0;
@@ -86,42 +102,91 @@ iframe {
 .container {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
-    margin: 5px;
-    background-color: white;
+    gap: 10px;
+    margin: 10px;
+    background-color: indigo;
 }
 
 .item {
-    background-color: teal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
     flex: 1 0 300px;
     padding: 20px;
     border-radius: 10px;
-    color: white;
+    color: indigo;
 }
 
 .img {
-    height: 300px;
-    background-size: cover;
+    height: 400px;
+    width: 400px;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
     border-radius: 10px;
-    margin-top: 10px;
+    margin: 10px;
 }
 
 .img1 {
-    background-image: url(hebib.jpg);
+    background-image: url(html.png);
 }
 .img2 {
-    background-image: url(ferid.jpg);
+    background-image: url(css.png);
 }
 .img3 {
-    background-image: url(nihat.jpg);
+    background-image: url(js.png);
 }
 .img4 {
-    background-image: url(ramazan.jpg);
+    background-image: url(php.png);
+}
+.img5 {
+    background-image: url(mysql.png);
+}
+.img6 {
+    background-image: url(python.png);
+}
+.img7 {
+    background-image: url(bootstrap.png);
+}
+.img8 {
+    background-image: url(jquery.png);
+}
+.img9 {
+    background-image: url(sass.png);
+}
+.img10 {
+    background-image: url(react.png);
 }
 
 @media (max-width:600px) {
-    .img {
-        background-attachment: fixed;
+    .header-item {
+        height: 80px;
+        width: 100px;
+    }
+    .header {
+        height: 100px;
+    }
+    .call {
+        width: 30px;
+        height: 30px;
+    }
+    .whatsapp {
+        width: 30px;
+        height: 30px;
+    }
+    .nav {
+        width: 30px;
+        height: 30px;
+    }
+    .footer {
+        height: 40px;
+    }
+    p {
+        font-size: 23px;
+    }
+    #footer {
+        font-size: 16px;
     }
 }
