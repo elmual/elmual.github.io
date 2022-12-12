@@ -16,6 +16,7 @@ html, body {
     justify-content: center;
     background-color: indigo;
     height: 150px;
+    z-index: 5;
     align-items: center;
     position: sticky;
     top: 0;
@@ -57,7 +58,7 @@ html, body {
 }
 
 .call:hover {
-    transform: scale(1.3);
+    transform: scale(1.2);
 }
 
 .nav {
@@ -68,8 +69,49 @@ html, body {
     background-size: cover;
     margin-right: 15px;
 }
+
+h1 {
+    cursor: pointer;
+}
+
+.language::before {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: indigo;
+    transform: scale(0);
+    transform: translate(0px, 0px);
+    transition: 0.6s;
+}
+
+.language::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: lime;
+    transform: scale(0);
+    transform: translate(0px, 3px);
+    transition: 0.5s;
+}
+
+.language:hover::before {
+    transform: scale(1);
+    transform: translate(0px, 53px);
+}
+
+.language:hover::after {
+    transform: scale(1);
+    transform: translate(0px, -50px);
+}
+
 h3 {
     padding: 10px;
+}
+
+h5 {
+    color: white;
 }
 
 p {
@@ -97,6 +139,7 @@ iframe {
     position: sticky;
     bottom: 0;
     color: white;
+    z-index: 4;
 }
 
 .container {
@@ -119,6 +162,97 @@ iframe {
     color: indigo;
 }
 
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    height: 420px;
+    width: 100%;
+    gap: 16px;
+    margin: 10px;
+}
+
+.box-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 130px;
+    width: 45%;
+    padding: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.box-item::before {
+    content: '';
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(0deg);
+    background-color: goldenrod;
+    border-radius: 10px;
+    color: indigo;
+    font-size: 25px;
+    font-weight: bold;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 1s;
+}
+
+.box-item:hover::before {
+    content: '';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(360deg);
+    background-color: indigo;
+    opacity: 80%;
+    border-radius: 10px;
+    color: white;
+}
+
+.box-item1::before {
+    content: 'Bazar ertəsi';
+}
+.box-item2::before {
+    content: 'Çərşənbə axşamı';
+}
+.box-item3::before {
+    content: 'Çərşənbə';
+}
+.box-item4::before {
+    content: 'Cümə axşamı';
+}
+.box-item5::before {
+    content: 'Cümə';
+}
+.box-item6::before {
+    content: 'Şənbə ';
+}
+
+.box-item1:hover::before {
+    content: 'FullStack Developer (saat) 19:00, 20:30';
+}
+.box-item2:hover::before {
+    content: 'FullStack Developer (saat) 19:00, 20:30';
+}
+.box-item3:hover::before {
+    content: 'FullStack Developer (saat) 19:00, 20:30';
+}
+.box-item4:hover::before {
+    content: 'FullStack Developer (saat) 19:00, 20:30';
+}
+.box-item5:hover::before {
+    content: 'FullStack Developer (saat) 19:00, 20:30';
+}
+.box-item6:hover::before {
+    content: 'FullStack Developer (saat) 11:00, 14:00, 16:00, 18:00';
+}
+
+
 .img {
     height: 400px;
     width: 400px;
@@ -127,6 +261,11 @@ iframe {
     background-repeat: no-repeat;
     border-radius: 10px;
     margin: 10px;
+    transition: 0.5s;
+}
+.img:hover {
+    filter: brightness(1.3);
+    z-index: 1;
 }
 
 .img1 {
@@ -176,6 +315,13 @@ iframe {
         width: 30px;
         height: 30px;
     }
+    .whatsapp:focus {
+        transform: scale(1.3);
+     }
+     
+     .call:focus {
+         transform: scale(1.3);
+     }
     .nav {
         width: 30px;
         height: 30px;
@@ -190,7 +336,7 @@ iframe {
         font-size: 16px;
     }
     .img {
-        height: 300px;
-        width: 300px;
+        height: 200px;
+        width: 200px;
     }
 }
