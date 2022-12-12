@@ -189,4 +189,8 @@ iframe {
     #footer {
         font-size: 16px;
     }
+    .img {
+        height: 300px;
+        width: 300px;
+    }
 }
