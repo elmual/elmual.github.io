@@ -135,6 +135,7 @@ iframe {
     justify-content: center;
     background-color: indigo;
     height: 60px;
+    width: 100%;
     align-items: center;
     color: white;
     z-index: 4;
