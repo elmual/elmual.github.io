@@ -136,8 +136,6 @@ iframe {
     background-color: indigo;
     height: 60px;
     align-items: center;
-    position: sticky;
-    bottom: 0;
     color: white;
     z-index: 4;
 }
