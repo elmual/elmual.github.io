@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Column</title>
+    <style>
+        html, body{
+            height: 100%;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            height: 100%;
+            gap: 3px 3px;
+            padding: 25px;
+        }
+        .grid-container>div{
+            background-color: lime;
+            border: 1px solid white;
+            text-align: center;
+            font-size: 25px;
+        }
+        .item1{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item item1">Header</div>
+        <div class="grid-item item2">Menu</div>
+        <div class="grid-item item3">Main</div>
+        <div class="grid-item item4">Right</div>
+        <div class="grid-item item5">Footer</div> 
+    </div>
+</body>
+</html>
