@@ -1,40 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid</title>
-    <style>
-        .item1{grid-area: header;}
-        .item2{grid-area: main;}
-        .item3{grid-area: menu;}
-        .item4{grid-area: right;}
-        .item5{grid-area: footer;}
-
-        .grid-container{
-            display: grid;
-            grid-template-areas: 
-            'header header header header right right'
-            'menu main main main  right right'
-            'menu main main main right right'
-            'menu footer footer footer footer footer';
-            
-        }
-        .grid-container>div{
-            background-color: lime;
-            border: 1px solid black;
-            padding: 20px;
-        }
-    </style>
+    <title>ASPA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
 </head>
+
 <body>
-    <div class="grid-container">
-        <div class="item1">Header</div>
-        <div class="item2">Main</div>
-        <div class="item3">Menu</div>
-        <div class="item4">Right</div>
-        <div class="item5">Footer</div>
+
+    <div class="header">
+        <div class="header-item"></div>
+        <div class="info">
+            <a href="tel:+994508412120">
+                <div class="call"></div>
+            </a>
+        </div>
+        <!-- <a href="https://wa.me/+994508412120"><div class="whatsapp"></div></a> -->
+        <div class="nav"></div>
     </div>
+    </div>
+
+    <div class="slide-container swiper">
+        <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="img/python.png" alt="" class="card-img">
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Elmaddin Ahmadzada</h2>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, sunt?
+                            </p>
+                            <button class="button">View more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="img/bootstrap.png" alt="" class="card-img">
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Elmaddin Ahmadzada</h2>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, sunt?
+                            </p>
+                            <button class="button">View more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="img/css.png" alt="" class="card-img">
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Elmaddin Ahmadzada</h2>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, sunt?
+                            </p>
+                            <button class="button">View more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="img/html.png" alt="" class="card-img">
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Elmaddin Ahmadzada</h2>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, sunt?
+                            </p>
+                            <button class="button">View more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="img/jquery.png" alt="" class="card-img">
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Elmaddin Ahmadzada</h2>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, sunt?
+                            </p>
+                            <button class="button">View more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="img/js.png" alt="" class="card-img">
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Elmaddin Ahmadzada</h2>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, sunt?
+                            </p>
+                            <button class="button">View more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="img/mysql.png" alt="" class="card-img">
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Elmaddin Ahmadzada</h2>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, sunt?
+                            </p>
+                            <button class="button">View more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="img/php.png" alt="" class="card-img">
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Elmaddin Ahmadzada</h2>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, sunt?
+                            </p>
+                            <button class="button">View more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="img/react.png" alt="" class="card-img">
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Elmaddin Ahmadzada</h2>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, sunt?
+                            </p>
+                            <button class="button">View more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="container">
+        <div class="item">
+            <h1 class="language">HTML</h1>
+            <div class="img img1"></div>
+            <p>HTML (Hypertext Markup Language) — brauzerin oxuya biləcəyi hər hansı sənədi və ya səhifəni yaratmaq üçün
+                xüsusi hipermətn dilidir. HTML internetin fundamental baza texnologiyasıdır və veb-səhifənin növünü,
+                funksiyasını təyin edən diskriptorlar əsasında yaradılmış dildir.</p>
+        </div>
+        <div class="item">
+            <h1 class="language">CSS</h1>
+            <div class="img img2"></div>
+            <p>CSS (ing. Cascading Style Sheets) — sənədin xarici görünüşünün, işarələmə dilinin istifadəsi ilə
+                yazılmış, formal təsvir dili. Adətən HTML və XHTML işarələmə dillərində yazılmış veb-səhifələrin təsviri
+                və tərtibatı üçün istifadə edilir, lakin istənilən digər XML sənədlərə, məsələn, SVG və ya XUL-a da
+                tətbiq edilə bilər.</p>
+        </div>
+        <div class="item">
+            <h1 class="language">JavaScript</h1>
+            <div class="img img3"></div>
+            <p>JavaScript – internet səhifələrin yaradılmasında geniş istifadə olunan proqramlaşdırma dilidir.
+                JavaScript müxtəlif dilllərdən ilhamlanaraq yaradılmışdır. Obyektə Yönümlü Proqramlaşdırma mövzusu
+                kifayət qədər mürəkkəb proqramlaşdırmadır.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="item">
+            <h1 class="language">Bootstarp</h1>
+            <div class="img img7"></div>
+            <p>Bootstrap — veb səhifələri və tətbiqetmələri yaratmaq üçün istifadə olunan açıq mənbə alətidir və HTML və
+                CSS vasitəsiylə yazı növləri, formlar, düymələr, navigasiya və başqa komponentlər üçün istifadə olunan
+                xüsusi dizayn qəliblərindən ibarətdir. Əsas hədəf dinamik veb səhifələri, veb tətbiqetmələri yaratmaq və
+                onların inkişafını sadələşdirməkdir. </p>
+        </div>
+        <div class="item">
+            <h1 class="language">jQuery</h1>
+            <div class="img img8"></div>
+            <p>jQuery — JavaScript kitabxanası. 2006-cı ildə Con Reziq tərəfindən istifadəyə buraxılmışdır. Hal-hazırda
+                Dave Methvin rəhbərlik etdiyi komanda tərəfindən inkişaf etdirilir. jQuery JavaScript kitabxanaları
+                arasında ən çox istifadə olunan kitabxanadır. 10,000 ən çox ziyarət edilən saytın 55%-də jQuery istifadə
+                edilib.</p>
+        </div>
+        <div class="item">
+            <h1 class="language">SASS</h1>
+            <div class="img img9"></div>
+            <p>Sass (Syntactically Awesome Stylesheets) — CSS kod abstraksiyasının səviyyəsini artırmaq və stilin kaskad
+                cədvəlləri sənədlərini asanlaşdırmaq üçün hazırlanmış bir CSS əsaslı metadil. Sass-ın iki sintaksisi
+                var: SASS — burada əyri mötərizələrdən istifadə edilmir və abzas, boşluqlar vasitəsilə yuvalaşma
+                aparılır. SCSS (Sassy CSS) — CSS-dəki əyri mötərizələrdən istifadə prinsipini saxlayır və yuvalaşma
+                aparılır.</p>
+        </div>
+        <div class="item">
+            <h1 class="language">React</h1>
+            <div class="img img10"></div>
+            <p>React (bəzən ReactJS və ya React.js)[3] — istifadəçi interfeyslərinin qurulması üçün açıq mənbəli
+                JavaScript kitabxanasıdır. Reaksiya tək səhifəli və ya mobil tətbiqetmələrin inkişafında baza kimi
+                istifadə edilə bilər. Bununla birlikdə React yalnız DOM-a məlumatların verilməsi ilə əlaqədardır.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="item">
+            <h1 class="language">PHP</h1>
+            <div class="img img4"></div>
+            <p>PHP (ing. PHP: Hypertext Preprocessor) dinamik veb səhifələr yaratmaq üçün nəzərdə tutulmuş bir
+                skriptləşdirmə dilidir. PHP Əsasən veb həllərin yaradılmasında istifadə edilən populyar server
+                proqramlaşdırma dilidir. Məsələn, formadakı məlumatları qəbul edərək emal edən skript yaratmaq, saytda
+                axtarış sistemi reallaşdırmaq və ya qeydiyyat sistemi yaratmaq mümkündür. </p>
+        </div>
+        <div class="item">
+            <h1 class="language">MySQL</h1>
+            <div class="img img5"></div>
+            <p>MySQL dünyanın ən məşhur baza sistemlərindən biridir. MySQL əvvəllər İsveçin MySQL AB kompaniyası
+                tərəfindən işlənilirdi. İndi isə Sun Microsystems şirkətinə məxsusdur. Proqramın açıq kodu GNU General
+                Public License lisenziyası altında mövcuddur. MySQL proqram təminatı SQL sorğu dilindən istifadə edərək
+                verilənlər bazası ilə işləməyə imkan verir.</p>
+        </div>
+        <div class="item">
+            <h1 class="language">Python</h1>
+            <div class="img img6"></div>
+            <p>Python dili - interpretasiya olunan, yüksək səviyyəli və ümumi-məqsədli proqramlaşdırma dilidir. 1991-ci
+                ildə Guido van Rossum tərəfindən yaradılmışdır. Python dilinin dizayn fəlsəfəsi boşluqlardan istifadə
+                edərək kod oxunaqlılığını vurğulayır. Bu dilin məqsədi onun dil quruluşu və obyekt-yönümlülüyü ilə
+                proqramçılara xırda və iri həcimli layihələrdə aydın, məntiqli kod yazmağa kömək etməkdir.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="item">
+            <h1 class="language">Kurs günləri</h1>
+            <div class="box">
+                <div class="box-item box-item1"></div>
+                <div class="box-item box-item2"></div>
+                <div class="box-item box-item3"></div>
+                <div class="box-item box-item4"></div>
+                <div class="box-item box-item5"></div>
+                <div class="box-item box-item6"></div>
+            </div>
+        </div>
+        <div class="item">
+            <h1 class="language">ƏLAQƏ</h1>
+            <h3>Telefon: (055) 602 26 00</h3>
+            <h3>Telefon: (055) 205 08 08</h3>
+            <h3>E-mail: aspagroup@aspa.az</h3>
+            <h3>Instagram: aspaeducation</h3>
+        </div>
+    </div>
+    <div class="container">
+        <div class="item">
+            <h1 class="language">Biz burdayıq</h1>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d225.87715049138504!2d49.9033546743362!3d40.386059221110095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d8144e08d71%3A0xbdfda3ce222b3ed3!2sASPA%20Education%20Center!5e0!3m2!1saz!2s!4v1670771635433!5m2!1saz!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <div class="container">
+        <div class="item2">
+            <a href="#">
+                <div class="reklam fb"></div>
+            </a>
+            <a href="#">
+                <div class="reklam yt"></div>
+            </a>
+            <a href="#">
+                <div class="reklam tg"></div>
+            </a>
+            <a href="#">
+                <div class="reklam ins"></div>
+            </a>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="elfsight-app-b0afb20a-b564-470f-8ee7-03b3ef99fe23"></div>
+    </div>
+    <div class="footer">
+        <p id="footer">ASPA GROUP &copy; 2022</p>
+    </div>
+
 </body>
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+
 </html>
